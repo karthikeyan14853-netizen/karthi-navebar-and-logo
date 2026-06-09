@@ -1,0 +1,106 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Layout */
+.navbar {
+  background-color: #0b132b; /* Deep dark blue background */
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+}
+
+/* Logo Styling */
+.nav-logo {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Additional logo image rules for other navbar variants */
+.navbar-logo a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* Menu Items */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-item {
+  height: 80px;
+}
+
+.nav-links {
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 16px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links:hover {
+  color: #38bdf8; /* Bright blue highlight */
+}
+
+/* Mobile Responsive Setup (Hamburger Button hidden by default) */
+.nav-hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+/* Media Query for Mobile Viewports */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Hide standard menu on mobile */
+    /* Add JS classes here to toggle menu open/close */
+  }
+  
+  .nav-hamburger {
+    display: block; /* Show hamburger button */
+  }
+} 

@@ -1,0 +1,265 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giri Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+}
+
+/* NAVBAR */
+
+nav{
+    background:rgba(255,208,0,0.9);
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    color:black;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.logo img{
+    width:50px;
+    margin-right:10px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* HERO SECTION */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:50px 8%;
+    color:white;
+}
+
+.hero-content{
+    max-width:550px;
+}
+
+.hero-subtitle{
+    color:#f7b500;
+    letter-spacing:3px;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.hero-content h1{
+    font-size:65px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-content h1 span{
+    color:#f7b500;
+}
+
+.hero-content p{
+    color:#cfcfcf;
+    font-size:18px;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn1{
+    background:#f7b500;
+    color:black;
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn2{
+    border:2px solid white;
+    color:white;
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero-image img{
+    width:450px;
+    max-width:100%;
+}
+
+/* HERO STATS */
+.hero-stats{
+    margin-top:30px;
+}
+.stats{
+    display:flex;
+    gap:30px;
+    margin-top:30px;
+}
+.stat{
+    background:rgba(255,255,255,0.04);
+    padding:18px 22px;
+    border-radius:10px;
+    min-width:120px;
+    text-align:center;
+}
+.stat-number{
+    font-size:28px;
+    color:#f7b500;
+    font-weight:700;
+    margin-bottom:6px;
+}
+.stat-label{
+    color:#cfcfcf;
+    font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .hero-image img{
+        width:300px;
+        margin-bottom:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->2
+
+<nav>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <span>kutty</span>
+    </div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-subtitle">
+            HELLO!
+        </div>
+
+        <h1>
+            I'm a <span>Web Designer</span><br>
+            Based in Chennai
+        </h1>
+
+        <p>
+            I design and develop modern websites with beautiful
+            user interfaces, responsive layouts and smooth user
+            experiences.
+        </p>
+
+
+        <div class="buttons">
+            <a href="#" class="btn1">Hire Me</a>
+            <a href="#" class="btn2">My Works</a>
+        </div>
+
+        <!-- STATS -->
+        <div class="hero-stats">
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number" data-target="120">250</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-target="98">280+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-target="8">5</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-target="15">560+</div>
+                    <div class="stat-label">Expert Developers</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="profile.jpeg" alt="Profile Image">
+    </div>
+
+</section>
+</section>
+
+<script src="../script.js"></script>
+
+</body>
+</html>
